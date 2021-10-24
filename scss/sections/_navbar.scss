@@ -1,0 +1,21 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.menu{
+     
+     @include gradient;
+     li{
+          padding: 0 0.7rem;
+          .nav-link{
+               color: $white !important;
+               text-transform: capitalize;
+               font-weight: 600;
+          }
+     @include media-breakpoint-down(lg){
+          text-align: center;
+          padding: 5px 0;
+     }
+
+     }
+     
+}
